@@ -1,0 +1,67 @@
+Npm Commands:
+//raw node
+mkdir HelloNode
+cd HelloNode
+echo var msg > app.js
+code .
+node app.js
+//expressjs
+mkdir ExpressProjects
+cd ExpressProjects
+npx express-generator HelloWorld --view=pug
+code .
+npm install
+npx cross-env DEBUG=HelloWorld:* npm start
+//nextjs
+mkdir NextProjects
+cd NextProjects
+npm create next-app my-next-app
+run dev or npm run build or npm start
+/nuxtjs
+mkdir NuxtProjects
+cd NuxtProjects
+npm create nuxt-app my-nuxt-app
+Project Name: my-nuxtjs-app
+Project description: Description of my Nuxt.js app.
+Author name: I use my GitHub alias.
+Choose the package manager: Yarn or Npm - we use NPM for our examples.
+Choose UI framework: None, Ant Design Vue, Bootstrap Vue, etc. Let's choose Vuetify for this example, but the Vue Community created a nice summary comparing these UI frameworks to help you choose the best fit for your project.
+Choose custom server frameworks: None, AdonisJs, Express, Fastify, etc. Let's choose None for this example, but you can find a 2019-2020 server framework comparison on the Dev.to site.
+Choose Nuxt.js modules (use spacebar to select modules or just enter if you don't want any): Axios (for simplifying HTTP requests) or PWA support (for adding a service-worker, manifest.json file, etc). Let's not add a module for this example.
+Choose linting tools: ESLint, Prettier, Lint staged files. Let's choose ESLint (a tool for analyzing your code and warning you of potential errors).
+Choose a test framework: None, Jest, AVA. Let's choose None as we won't cover testing in this quickstart.
+Choose rendering mode: Universal (SSR) or Single Page App (SPA). Let's choose Universal (SSR) for our example, but the Nuxt.js docs point out some of the differences -- SSR requiring a Node.js server running to server-render your app and SPA for static hosting.
+Choose development tools: jsconfig.json (recommended for VS Code so Intellisense code completion works)
+
+cd my-nuxtjs-app
+code .
+run dev or npm run build or npm start
+//gatsbyjs
+mkdir GatsbyProjects
+cd GatsbyProjects
+npm install -g gatsby-cli
+gatsby --version
+gatsby new my-gatsby-app
+cd my-gatsby-App
+code .
+gatsby develop for running a development instance with hot-reloading.
+gatsby build for creating a production build.
+gatsby serve for starting your app in production mode.
+/emberjs
+ember new my-new-app
+cd my-new-app
+ember server
+/reactjs
+npx create-react-app my-app
+cd my-app
+npm start
+/angular2
+npm install -g @angular/cli
+ng new my-app
+cd my-app
+ng serve --open
+/next
+npm init next-app
+/vuejs
+npm install -g @vue/cli
+vue create my-project
